@@ -26,7 +26,7 @@
 				// create google map
 				var _buildMap = function(){
 					var myOptions = {
-						center: new google.maps.LatLng(-34.397, 150.644),
+						center: new google.maps.LatLng(44.9719, -113.3405),
 						zoom: 8,
 						mapTypeId: google.maps.MapTypeId.ROADMAP,
 						zoomControlOptions: {
@@ -74,15 +74,11 @@
 			<form id="search">
 				<div>
 					<label for="search_city">City </label>
-					<select id="search_city" name="search_city">
-						<option value="Madison">Madison</option>
-					</select>
+					<input id="search_city" name="search_city" type="text"/>
 				</div>
 				<div>
 					<label for="search_state">State </label>
-					<select id="search_state" name="search_state">
-						<option value="WI">WI</option>
-					</select>				
+					<input id="search_state" name="search_state" type="text"/>	
 				</div>
 				<div>
 					<label for="search_zip">Zip </label>

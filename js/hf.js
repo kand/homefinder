@@ -1,7 +1,7 @@
 
 var HF = (function($){
 	// server side search url
-	var _PHP_URL = '/php/search.php';
+	var _PHP_URL = '/homefinder/search.php';
 	
 	// variable to prevent multiple search ajax requests at the same time
 	var _ajaxing = null;
