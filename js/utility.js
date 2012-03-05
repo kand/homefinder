@@ -2,6 +2,17 @@
 var Utils = (function($){
 	return {
 		/**
+		 * Process a given url so it displays properly on website.
+		 * 
+		 * @param string url	the url to process
+		 * @returns processed URL ready for use
+		 */
+		processUrl: function(url){
+			url = url.replace('\\',url);
+			return url;
+		},
+		
+		/**
 		 * Set up a form for ajax submission.
 		 * 
 		 * @param string formId			Id of form to set up ajax submission for
