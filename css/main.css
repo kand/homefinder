@@ -41,10 +41,11 @@ body {
 	display:inline-block;
 	text-align:right;
 }
-.search-row input{
-}
-.field-zip {
+#search_zip{
 	width: 40px;
+}
+.search-row input{
+	width:50%;
 }
 #search_submit{
 	margin:1em 0 0 10px;

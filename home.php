@@ -30,7 +30,7 @@
 				</div>
 				<div class="search-row">
 					<label for="search_zip">Zip </label>
-					<input id="search_zip" name="search_zip" type="text" class="field-zip"/>
+					<input id="search_zip" name="search_zip" type="text" class="field-zip" maxlength="5"/>
 				</div>
 				<button id="search_submit" type="submit">Search</button><img id="search_loading" alt="loading..." src="img/loader.gif"/>
 			</form>
