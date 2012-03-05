@@ -19,6 +19,7 @@
 			
 			<form id="search">
 				<div id="result_message"></div>
+				<input id="search_page_num" name="search_page_num" type="hidden"/>
 				<div class="search-row">
 					<label for="search_city">City </label>
 					<input id="search_city" name="search_city" type="text"/>
@@ -39,7 +40,17 @@
 				<h2>Results</h2>
 				<div id="result_total">I found 0 listings!</div>
 				<div id="result_list"></div>
-				<div id="pageCounter">page <span id="result_page">0</span> / <span id="result_pages">0</span></div> 
+				
+				<div id="pageCounter">
+					<button id="page_back"><</button>
+					<span id="result_page">0</span> / <span id="result_pages">0</span>
+					<button id="page_fwd">></button>
+				</div> 
+			</div>
+		</div>
+		<div id="listing_info">
+			<button id="listing_info_close">X</button>
+			<div id="listing_info_details">
 			</div>
 		</div>
 		<div id="map_container">

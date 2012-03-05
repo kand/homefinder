@@ -1,6 +1,6 @@
 body, h1, h2{
 	margin:0;
-	padding:0;	
+	padding:0;
 }
 
 body {
@@ -34,8 +34,7 @@ body {
 #search{
 	margin: 0 0 1em;
 }
-.search-row{
-	
+.search-row{	
 }
 .search-row label{
 	width:50px;
@@ -59,13 +58,64 @@ body {
  * Results
  ************/
 #search_results{
-/*	display:none;*/
+	display:none;
+}
+#result_list{
 }
 #result_message{
 	display:none;
 	color:#ff0000;
 	font-weight:bold;
 }
+#pageCounter{
+	border-top: 1px solid #CCCCCC;
+	text-align: center;
+}
 .listing-long, .listing-lat, .listing-lng{
 	display:none;
+}
+.listing-short{
+	cursor: pointer;
+	border-top: 1px solid #CCCCCC;
+}
+.listing-short-address{
+	display: inline;
+}
+.listing-short-price{
+	display: inline;
+	color: #eeee00;
+}
+
+/************
+ * 	Listing Info
+ ************/
+#listing_info{
+	display: none;
+	bottom: 0;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.75);
+	left: 300px;
+	width: 70%;
+	height: 250px;
+}
+#listing_info_close{
+	float:right;
+}
+.listing-lower{
+	clear:both;
+	margin: 1em 0 0 0;
+}
+.listing-img{
+	float:left;
+	margin: 0 1em 1em 0;
+}
+.listing-long-address{
+	font-weight:bold;
+}
+.listing-long-bed{
+	display: inline;
+	margin: 0 1em 0 0;
+}
+.listing-long-bath{
+	display: inline;
 }

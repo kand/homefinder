@@ -34,11 +34,14 @@ class Search {
 			"apikey" => Search::$API_KEY,
 			"area" => "",
 			"page" => 1,
-			"resultSize" => 1
+			"resultSize" => 7
 		);
 		
 		// translate data
 		foreach($postData as $k=>$v){
+			// make sure url is proper format
+			$v = urlencode($v);
+			// translate
 			if(!empty($v)){
 				if($k == "search_city"){
 					$query["area"] = $v . $query["area"];
@@ -46,6 +49,10 @@ class Search {
 					$query["area"] = $query["area"] . "," . $v;
 				} else if($k == "search_zip" && strlen($v) === 5 && is_numeric($v)){
 					$query["area"] = $v;
+				} else if($k == "search_page_num" && is_numeric($v)){
+					$query["page"] = $v;
+				} else if($k == "search_results_size" && is_numeric($v)){
+					$query["resultsSize"] == $v;
 				}
 			}
 		}
